@@ -83,10 +83,6 @@ const resolvers = [
 ];
 
 export default function resolvePath(sourcePath, currentFile, opts) {
-  if (isRelativePath(sourcePath)) {
-    return sourcePath;
-  }
-
   const normalizedOpts = normalizeOptions(currentFile, opts);
 
   // File param is a relative path from the environment current working directory
